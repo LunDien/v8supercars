@@ -9,7 +9,7 @@ export default function HeaderContent() {
             {state.brands?.map((brand, index) => brand.brand.toLowerCase().split('-').join('') === state.brand && (
                 <div key={index} className={styled.header}>
                     <div className={styled.headerLogo}>
-                    <img alt="contentImg" className={styled.logo} src={"http://localhost:9000/" + brand.bigLogoURL} />
+                    <img alt="contentImg" className={styled.logo} src={"https://v8supercars-data.herokuapp.com/" + brand.bigLogoURL} />
                     </div>
                     <div className={styled.headerContent}>
                         {brand.description.split('\\nn').map((string, index) => string.split('\\n').length > 1

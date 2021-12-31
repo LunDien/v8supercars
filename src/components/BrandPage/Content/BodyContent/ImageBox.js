@@ -62,7 +62,7 @@ function ImageBox({mode}) {
             <img 
             alt="contentImg" 
             className={cssStyle}
-            src={(image.length > 1) ? ("http://localhost:9000/" + image[index]) : ''} 
+            src={(image.length > 1) ? ("https://v8supercars-data.herokuapp.com/" + image[index]) : ''} 
             />
             <div className={styled[mode.toLowerCase()]}>
                 <p>{mode.charAt(0).toUpperCase() + mode.slice(1)}</p>

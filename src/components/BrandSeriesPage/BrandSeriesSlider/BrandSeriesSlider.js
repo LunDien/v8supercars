@@ -14,7 +14,7 @@ export default function BrandSeriesSlider() {
                 <Carousel.Item key={index} className={styled.slider}>
                 <img
                 className={classImg}
-                src={`http://localhost:9000/${car.imageURL[0]}`}
+                src={`https://v8supercars-data.herokuapp.com/${car.imageURL[0]}`}
                 alt={`slider ${state.brand} ${index}`}
                 />
                 <Carousel.Caption>
