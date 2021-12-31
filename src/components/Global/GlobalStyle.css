@@ -1,0 +1,79 @@
+:root {
+    --header-height: 68px;
+    --headerSub-height: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.flex-row {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.slick-prev {
+    left: 0;
+    background-color:black;
+}
+
+.slick-next {
+    right: 0;
+    background-color:black;
+}
+
+.slick-center {
+    transform: scale(1.2)
+}
+
+.slick-list {
+    width: 90%;
+}
+
+.col-form-label {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;    
+    line-height: 1.2rem;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 75%;
+    left: 0;
+    margin-top: 0.125rem;
+}
+
+.btn-custom {
+    color: #fff;
+    opacity: 0.8;
+    background-color: transparent;
+}
+
+.btn-custom:hover {
+    opacity: 1;
+    color: violet;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+}
+

@@ -1,0 +1,5 @@
+export const SET_BRAND = 'set_brand'
+export const SET_CARS_DATA = 'set_cars_data'
+export const SET_VIDEOS_DATA = 'set_videos_data'
+export const SET_SERIES = 'set_series'
+export const SET_BRANDS_DATA = 'set_brands_data'

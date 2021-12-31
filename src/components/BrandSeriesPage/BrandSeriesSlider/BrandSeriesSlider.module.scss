@@ -1,0 +1,56 @@
+.slidercss {
+    width: 100%;
+    max-height: 600px;
+}
+.slider {
+    background-color: #202020;
+}
+
+
+.sliderImg {
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.sliderMclaren {
+    @extend .sliderImg;
+    object-position: 100% 10%;
+}
+
+.sliderCaption {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 131%);
+    font-size: 6rem;
+    color: cyan;
+    font-weight: bold;
+    margin: 0;
+    animation-name: Content;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+.sliderSubCaption {
+    @extend .sliderCaption;
+    font-size: 4rem;
+    color: navajowhite;
+    font-style: italic;
+    transform: translate(-50%, 300%);
+    animation-name: SubContent;
+}

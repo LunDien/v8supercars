@@ -1,0 +1,255 @@
+.container {
+    width: 100%;
+    margin: 24px 0 -12%;
+    padding: 24px 0 0;
+    margin-top: 24px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLogo {
+    background-color: #202020;
+    clip-path: circle(50% at 50% 50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 65px;
+    display: block;
+}
+
+.headerContent {
+    margin-top: 20px;
+    width: 70%;
+    color: #202020;
+}
+
+.content {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.overview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imageBox {
+    flex: 2;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.imageLeft {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin-left: -30%;
+    margin-top: 0;
+
+}
+.imageLeft2 {
+    @extend .imageLeft;
+    clip-path: polygon(0 0%, 75% 0%, 100% 100%, 0% 100%);
+    margin-left: -30%;
+    margin-top: 5%;
+}
+
+
+
+.imageRight {
+    @extend .imageLeft;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 25% 100%);
+    margin-top: -50%;
+    margin-left: 45%;
+}
+
+.imageRight2 {
+    @extend .imageLeft;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -45%;
+    margin-left: 45%;
+}
+
+
+.career {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    margin-top: 30%;
+    margin-left: -10%;
+    color: #202020;
+}
+
+.address {
+    @extend .career;
+    margin-left: 30%;
+}
+
+.models {
+    position: absolute;
+    z-index: 1;
+    color: #B8860B;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 37%;
+    left: 30%;
+}
+
+.service {
+    @extend .models;
+    color: blue;
+}
+
+.feedback {
+    @extend .models;
+    color: yellow;
+    top: -5%;
+    left: 70%;
+}
+
+.contact {
+    @extend .feedback;
+    color: red;
+}
+
+.overlayLeft {
+    position: absolute;
+    min-width: auto;
+    max-width: 100%;
+    background-color: #202020;
+    top: 57%;
+    left: 37%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.overlayRight {
+    @extend .overlayLeft;
+    top: 10%;
+    left: auto;
+    right: 31%;
+    
+}
+
+.modalContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.modalList {
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0;
+
+    li > a {
+        margin: 5px 0;
+        opacity: 0.7;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    
+}
+
+.carName {
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0;
+    display: none;
+    
+    
+
+    li {
+        margin: 10px 0;
+        line-height: 1.4rem;
+        font-size: 1.2rem;
+        
+    }
+
+
+    li > a{
+        position: relative;
+        color: #fff;
+        opacity: 0.7;
+        padding: 4px 0;
+        display: block;
+        min-width: auto;
+        max-width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 0;
+            transition: width 0.3s ease-in-out;
+            border-bottom: 1px solid violet;
+            opacity: 0;
+        }
+    }
+
+    li > a:hover {
+        opacity: 1;
+        overflow: visible;
+        max-width: 100%;
+        &::after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+.Btn {
+    display: block;
+    border: none;
+}
+
+.linkModal{
+    display: block;
+    width: 100%;
+
+    &:hover {
+        opacity: 1 !important;
+        text-shadow: 0px -2px 0px rgba(0,0,0,0.7), 0 0 8px rgba(255,255,255,1),0 0 8px rgba(255,255,255,1) !important;
+    }
+}
