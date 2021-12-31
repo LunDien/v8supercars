@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/v8supercars/static/css/main.3c794052.chunk.css",
+    "main.js": "/v8supercars/static/js/main.85161588.chunk.js",
+    "main.js.map": "/v8supercars/static/js/main.85161588.chunk.js.map",
+    "runtime-main.js": "/v8supercars/static/js/runtime-main.3d299aff.js",
+    "runtime-main.js.map": "/v8supercars/static/js/runtime-main.3d299aff.js.map",
+    "static/css/2.a1aa2be7.chunk.css": "/v8supercars/static/css/2.a1aa2be7.chunk.css",
+    "static/js/2.6c70f5e8.chunk.js": "/v8supercars/static/js/2.6c70f5e8.chunk.js",
+    "static/js/2.6c70f5e8.chunk.js.map": "/v8supercars/static/js/2.6c70f5e8.chunk.js.map",
+    "static/js/3.b07e5852.chunk.js": "/v8supercars/static/js/3.b07e5852.chunk.js",
+    "static/js/3.b07e5852.chunk.js.map": "/v8supercars/static/js/3.b07e5852.chunk.js.map",
+    "index.html": "/v8supercars/index.html",
+    "static/css/2.a1aa2be7.chunk.css.map": "/v8supercars/static/css/2.a1aa2be7.chunk.css.map",
+    "static/css/main.3c794052.chunk.css.map": "/v8supercars/static/css/main.3c794052.chunk.css.map",
+    "static/js/2.6c70f5e8.chunk.js.LICENSE.txt": "/v8supercars/static/js/2.6c70f5e8.chunk.js.LICENSE.txt",
+    "static/media/arrow-right-fill.d1711249.svg": "/v8supercars/static/media/arrow-right-fill.d1711249.svg",
+    "static/media/arrow-right.78110b50.png": "/v8supercars/static/media/arrow-right.78110b50.png",
+    "static/media/arrow-right.f89a9843.svg": "/v8supercars/static/media/arrow-right.f89a9843.svg",
+    "static/media/hexagon-fill.af3c66ee.svg": "/v8supercars/static/media/hexagon-fill.af3c66ee.svg",
+    "static/media/hexagon.163ab9e6.svg": "/v8supercars/static/media/hexagon.163ab9e6.svg",
+    "static/media/lamborghini1.0acae154.jpeg": "/v8supercars/static/media/lamborghini1.0acae154.jpeg",
+    "static/media/lamborghini2.2a9bd0fb.jpeg": "/v8supercars/static/media/lamborghini2.2a9bd0fb.jpeg",
+    "static/media/lamborghini3.3e9a9b8a.jpeg": "/v8supercars/static/media/lamborghini3.3e9a9b8a.jpeg",
+    "static/media/lamborghini4.242deb43.jpeg": "/v8supercars/static/media/lamborghini4.242deb43.jpeg",
+    "static/media/leftcar.4a1fa13e.png": "/v8supercars/static/media/leftcar.4a1fa13e.png",
+    "static/media/lykan-hypersport.e050f673.jpeg": "/v8supercars/static/media/lykan-hypersport.e050f673.jpeg",
+    "static/media/mclaren-P1.9159019d.jpeg": "/v8supercars/static/media/mclaren-P1.9159019d.jpeg",
+    "static/media/rightcar1.164e3129.png": "/v8supercars/static/media/rightcar1.164e3129.png",
+    "static/media/road.bbd40b13.jpeg": "/v8supercars/static/media/road.bbd40b13.jpeg",
+    "static/media/road.d74b2e96.png": "/v8supercars/static/media/road.d74b2e96.png",
+    "static/media/slick-theme.css": "/v8supercars/static/media/slick.c94f7671.ttf",
+    "static/media/wheel4.b4b4e5aa.png": "/v8supercars/static/media/wheel4.b4b4e5aa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d299aff.js",
+    "static/css/2.a1aa2be7.chunk.css",
+    "static/js/2.6c70f5e8.chunk.js",
+    "static/css/main.3c794052.chunk.css",
+    "static/js/main.85161588.chunk.js"
+  ]
+}
