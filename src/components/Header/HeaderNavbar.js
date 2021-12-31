@@ -36,7 +36,7 @@ function HeaderNavbar() {
                         </Nav.Link> 
                         {state.brands?.map((brand, index) => (
                             <Link key={index} className={classNavItem} to={'/' + brand.brand.toLowerCase().split('-').join('')} onClick={handleClick}>
-                            <img src={"http://localhost:9000/" + brand.logoURL} alt={brand.brand} className={styled.logo} />
+                            <img src={"https://v8supercars-data.herokuapp.com/" + brand.logoURL} alt={brand.brand} className={styled.logo} />
                             {brand.brand.charAt(0).toUpperCase() + brand.brand.slice(1)}
                             </Link>
                         ))}
