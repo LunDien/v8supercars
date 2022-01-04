@@ -11,7 +11,7 @@ export default function Footer() {
             <Row>
                 <Col>
                     <div className={styled.footer_shop}>
-                        <a href="/" className={styled.footer_shop__logo}>
+                        <a href="/v8supercars" className={styled.footer_shop__logo}>
                             <img src={logo} alt="supercar-logo" className={styled.footer_shop__logo_img}/>
                         </a>
                     </div>

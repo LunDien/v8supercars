@@ -3,6 +3,11 @@
     --headerSub-height: 32px;
 }
 
+html {
+    overflow-x: hidden;
+}
+  
+
 a {
     text-decoration: none;
 }
@@ -63,12 +68,16 @@ a {
     color: #fff;
     opacity: 0.8;
     background-color: transparent;
+    outline: none;
+    margin: 0 8px;
+    cursor: pointer;
 }
 
 .btn-custom:hover {
     opacity: 1;
     color: violet;
     background-color: transparent;
+    border: unset;
     border-color: transparent;
 }
 

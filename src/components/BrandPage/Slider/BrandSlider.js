@@ -26,7 +26,7 @@ function BrandSlider() {
                         youtube: {
                             playerVars: {
                                 showinfo: 0,
-                                origin: "https://localhost:3000"
+                                origin: "https://lundien.github.io/v8supercars/"
                     
                             }
 

@@ -29,9 +29,9 @@ export default function Slider() {
     return (
         <Figure className={styled.Figure} onClick={handleSlider}>
             <div className={styled.slider}>
-                <img src={road}  alt="road"/>
-                <img src={road1} alt="road"/>
-                <img src={road} alt="road"/>
+                <img src={road} className={styled.background} alt="road"/>
+                <img src={road1} className={styled.background} alt="road"/>
+                <img src={road} className={styled.background} alt="road"/>
             </div>
             <ModalSlider />
         </Figure>

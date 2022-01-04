@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 
 
 
-function HeaderSubNavbar() {
+function HeaderSubNavbar({brand}) {
     const classesItem = clsx(styled.navSubItem, 'flex-col')
     const [state, dispatch] = useStore()
     const [series, setSeries] = useState([])
@@ -28,7 +28,7 @@ function HeaderSubNavbar() {
     }
     return (
         <div className={clsx("animate__animated", "animate__slideInRight", {
-            "hidden": !state.brand
+            "hidden": !brand || !state.brand
         })}>
             <Navbar bg="light" variant="light" className={styled.navbarSub}>
                 <Container className='flex-row'>

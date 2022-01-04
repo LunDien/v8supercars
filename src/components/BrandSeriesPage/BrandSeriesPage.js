@@ -5,7 +5,6 @@ export default function BrandSeriesPage() {
     return (
         <>
             <BrandSeriesSlider />
-            <BrandSeriesContent />
         </>
     )
 }

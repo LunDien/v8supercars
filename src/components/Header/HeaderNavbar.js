@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Container, Nav, Navbar, Col, Button } from 'react-bootstrap'
+import { Container, Nav, Navbar, Col } from 'react-bootstrap'
 import clsx from 'clsx'
 
 import HeaderSubNavbar from './HeaderSubNavbar'
@@ -9,7 +9,7 @@ import viewall from '../../assets/img/logo/arrow-right.png'
 import { useStore, actions } from '../Store'
 
 
-function HeaderNavbar() {
+function HeaderNavbar({ brand }) {
     const classNavItem = clsx(styled.navItem, 'flex-col')
     const classNavList = clsx(styled.navList, "d-flex", "justify-content-center")
     const [state, dispatch] = useStore()
@@ -31,7 +31,7 @@ function HeaderNavbar() {
             <Col sm={10}>
                 <Container className={classNavList} >
                     <Nav >
-                        <Nav.Link className={classNavItem} href="/">
+                        <Nav.Link className={classNavItem} href="/v8supercars">
                             <img src={logoshop} alt="logoshop" className={styled.logoshop} />
                         </Nav.Link> 
                         {state.brands?.map((brand, index) => (
@@ -40,7 +40,7 @@ function HeaderNavbar() {
                             {brand.brand.charAt(0).toUpperCase() + brand.brand.slice(1)}
                             </Link>
                         ))}
-                        <Link className={classNavItem} to={'/viewall'}>
+                        <Link className={classNavItem} to={'/viewall'} name="viewall">
                         <img src={viewall} alt="viewall" name="viewall" onClick={handleClick} className={styled.logo} />
                         View All
                         </Link>
@@ -49,13 +49,13 @@ function HeaderNavbar() {
             </Col>
             <Col sm={2}>
                 <Container className="d-flex text-white justify-content-end align-items-center">
-                    <Button variant="dark" className="btn-custom">Sign in</Button>
+                    <div className="btn-custom">Sign in</div>
                     <span>|</span>
-                    <Button variant="dark" className="btn-custom">Sign up</Button>
+                    <div className="btn-custom">Sign up</div>
                 </Container>
             </Col>
         </Navbar>
-        <HeaderSubNavbar/>
+        <HeaderSubNavbar brand={brand}/>
         </>
     )
 }

@@ -29,8 +29,9 @@ function App() {
     <div>
       <Router>
         <GlobalStyle>
-        <HeaderNavbar/>
+        <HeaderNavbar brand={brand}/>
         <Routes>
+            <Route path="/v8supercars" element={<Homepage/>} />
             <Route path="/" element={<Homepage/>} />
             <Route path={'/' + brand} element={<BrandPage/>} />
             <Route path={'/' + state.series} element={<BrandSeriesPage/>} />

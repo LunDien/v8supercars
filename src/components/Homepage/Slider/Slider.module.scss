@@ -7,9 +7,15 @@
     overflow: hidden;
 }
 
-.slider{
+.slider {
     display: flex;
     width: 100%;
+}
+
+.background {
+    display: block;
+    min-width: calc(100% / 3);
+    min-height: 408px;
 }
 
 .sliderImg {
