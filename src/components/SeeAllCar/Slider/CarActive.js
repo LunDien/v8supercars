@@ -5,7 +5,7 @@ function CarActive({car, imgActive}) {
     const [item, setItem] = useState()
     useEffect(() => {
         imgActive ? setItem(imgActive) : setItem(car)
-    })
+    }, [imgActive])
     
     return (
         <>

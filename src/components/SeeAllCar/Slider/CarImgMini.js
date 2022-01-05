@@ -11,7 +11,7 @@ function CarImgMini({ car, imgActive}) {
 
     useEffect(() => {
         imgActive ? setItem(imgActive) : setItem(car)
-    })
+    }, [imgActive])
 
     useEffect(() => {
         const slider = document.querySelector(`.${styled.contentSlider}`)

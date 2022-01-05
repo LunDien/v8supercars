@@ -6,7 +6,7 @@ function CarItem({ car, OnClickItem, imgActive }) {
     
     useEffect(() => {
         imgActive ? setItem('') : setItem(car)
-    })
+    }, [imgActive])
 
 
     return (

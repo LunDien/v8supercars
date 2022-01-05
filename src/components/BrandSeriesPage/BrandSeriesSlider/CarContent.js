@@ -8,7 +8,7 @@ function CarContent({ car, imgActive}) {
 
     useEffect(() => {
         imgActive ? setItem(imgActive) : setItem(car)
-    })
+    }, [])
     return (
         <>
             {item && (

@@ -21,7 +21,7 @@ function HeaderSubNavbar({brand}) {
                 setSeries([])
             }
         })
-    })
+    }, [brand])
 
     const handleClick = (e) => {
         dispatch(actions.setSeries(`${state.brand}-${e.target.innerText.toLowerCase()}`))

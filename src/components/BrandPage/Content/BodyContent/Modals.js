@@ -20,7 +20,7 @@ export default function Modals({service}) {
                 setSeries([])
             }
         })
-    })
+    }, [state.brand])
 
     const handleHoverList = e => {
         e.stopPropagation()

@@ -8,7 +8,7 @@ export default function TextContent({mode}) {
     const [content, setContent] = useState("")
     useEffect(() => {
         state.brands?.map(brand => brand.brand.toLowerCase().split('-').join('') === state.brand && setContent(brand[mode]))
-    })
+    }, [mode])
     return (
         <div className={styled[mode]}>
             <p className={mode === 'career' ? "w-75 fs-2 fw-bold" : "w-100 fs-2 fw-bold"}>{mode.charAt(0).toUpperCase() + mode.slice(1)}</p>
