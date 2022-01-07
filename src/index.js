@@ -9,6 +9,7 @@ import {StoreProvider} from '../src/components/Store'
 const root = document.getElementById('root')
 
 root.style.backgroundColor = 'black'
+document.title = "V8-SuperCars"
 
 ReactDOM.render(
   <React.StrictMode>

@@ -24,7 +24,7 @@ function App() {
   const [brand, setBrand] = useState('')
   useEffect(() => {
     state.brands?.map(brand => brand.brand.toLowerCase().split('-').join('') === state.brand && setBrand(state.brand))
-  })
+  }, [])
   return (
     <div>
       <Router>
