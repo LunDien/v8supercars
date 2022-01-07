@@ -282,6 +282,9 @@
 
 .carName {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: auto;
     bottom: 4px;
     color: #fff;
@@ -292,7 +295,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    height: 25%;
+    height: 20%;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1;

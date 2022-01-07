@@ -38,7 +38,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 131%);
-    font-size: 6rem;
+    font-size: 95px;
     color: cyan;
     font-weight: bold;
     margin: 0;
@@ -51,7 +51,7 @@
 
 .sliderSubCaption {
     @extend .sliderCaption;
-    font-size: 4rem;
+    font-size: 62px;
     color: navajowhite;
     font-style: italic;
     transform: translate(-50%, 300%);
@@ -69,9 +69,9 @@
 .carLeft1 {
     position: absolute;
     transform: translateY(83%);
-    width: 20%;
-    left: -20%;
-    animation: CarLeft 3s ease-out;
+    width: 288px;
+    left: -288px;
+    animation: CarLeft 2s linear;
 
 }
 
@@ -82,10 +82,10 @@
 
 .carRight1 {
     position: absolute;
-    width: 24%;
+    width: 345.6px;
     transform: translateY(114%);
-    left: 100%;
-    animation: CarRight 3s ease-out;
+    left: calc(100% + 345.6px);
+    animation: CarRight 2s linear;
 }
 
 .carRight2 {
@@ -96,14 +96,14 @@
 
 
 .wheelFrontLeft {
-    --value_translate: translateY(656%);
+    --value_translate: translateY(257px);
     position: absolute;
-    width: 2.69%;
-    left: -16.5%;
+    width: 38.736px;
+    left: -238px;
     transform: var(--value_translate);
     animation-name: WheelLeft, WheelFrontLeft;
-    animation-duration: .3s, 3s;
-    animation-timing-function: ease-out;
+    animation-duration: .3s, 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite, 1;
 }
 
@@ -119,10 +119,10 @@
 
 .wheelFrontRight {
     @extend .wheelFrontLeft;
-    --value_translate: translateY(797%);
+    --value_translate: translateY(329px);
     transform: var(--value_translate);
-    width: 2.85%;
-    left: 115.8%;
+    width: 41.04px;
+    left: calc(100% + 225.6px);
     animation-name: WheelRight, WheelFrontRight;
 
 }
@@ -137,14 +137,14 @@
 }
 
 .wheelBackLeft {
-    --value_translate: translateY(617%);
+    --value_translate: translateY(254px);
     position: absolute;
-    width: 2.85%;
-    left: -5.8%;
+    width: 41.04px;
+    left: -84px;
     transform: var(--value_translate);
     animation-name: WheelLeft, WheelBackLeft;
-    animation-duration: .3s, 3s;
-    animation-timing-function: ease-out;
+    animation-duration: .3s, 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite, 1;
 }
 
@@ -160,10 +160,10 @@
 
 .wheelBackRight {
     @extend .wheelBackLeft;
-    --value_translate: translateY(736%);
-    width: 3.05%;
+    --value_translate: translateY(326px);
+    width: 43.92px;
     transform: var(--value_translate);
-    left: 104.45%;
+    left: calc(100% + 63.6px);
     animation-name: WheelRight, WheelBackRight;
 
 }
@@ -195,13 +195,13 @@
         left: 100%;
     }
     to {
-        left: -20%;
+        left: -288px;
     }
 }
 
 @keyframes CarRight {
     from {
-        left: -20%;
+        left: -345.6px;
     }
     to {
         left: 100%;
@@ -210,18 +210,18 @@
 
 @keyframes WheelFrontLeft {
     from {
-        left: 103.5%;
+        left: calc(100% + 50px);
     }
     to {
-        left: -16.5%;
+        left: -238px;
     }
 }
 @keyframes WheelBackLeft {
     from {
-        left: 114.2%;
+        left: calc(100% + 204px);
     }
     to {
-        left: -5.8%;
+        left: -84px;
     }
 }
 
@@ -244,18 +244,18 @@
 
 @keyframes WheelFrontRight {
     from {
-        left: -4.2%;
+        left: -120px;
     }
     to {
-        left: 115.8%;
+        left: calc(100% + 225.6px);
     }
 }
 @keyframes WheelBackRight {
     from {
-        left: -15.55%;
+        left: -282px;
     }
     to {
-        left: 104.45%;
+        left: calc(100% + 63.6px);
     }
 }
 
