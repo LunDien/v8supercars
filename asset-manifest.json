@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/v8supercars/static/css/main.47929e5e.chunk.css",
-    "main.js": "/v8supercars/static/js/main.a99f6458.chunk.js",
-    "main.js.map": "/v8supercars/static/js/main.a99f6458.chunk.js.map",
+    "main.js": "/v8supercars/static/js/main.923d27bc.chunk.js",
+    "main.js.map": "/v8supercars/static/js/main.923d27bc.chunk.js.map",
     "runtime-main.js": "/v8supercars/static/js/runtime-main.6cf722c2.js",
     "runtime-main.js.map": "/v8supercars/static/js/runtime-main.6cf722c2.js.map",
     "static/css/2.a1aa2be7.chunk.css": "/v8supercars/static/css/2.a1aa2be7.chunk.css",
@@ -36,6 +36,6 @@
     "static/css/2.a1aa2be7.chunk.css",
     "static/js/2.466ac9bd.chunk.js",
     "static/css/main.47929e5e.chunk.css",
-    "static/js/main.a99f6458.chunk.js"
+    "static/js/main.923d27bc.chunk.js"
   ]
 }
