@@ -23,8 +23,9 @@ function App() {
   const [state] = useStore()
   const [brand, setBrand] = useState('')
   useEffect(() => {
-    state.brands?.map(brand => brand.brand.toLowerCase().split('-').join('') === state.brand && setBrand(state.brand))
-  }, [])
+    state.brands && state.brands.map(brand => brand.brand.toLowerCase().split('-').join('') === state.brand && setBrand(state.brand))
+  })
+
   return (
     <div>
       <Router>
@@ -33,7 +34,7 @@ function App() {
         <Routes>
             <Route path="/v8supercars" element={<Homepage/>} />
             <Route path="/" element={<Homepage/>} />
-            <Route path={'/' + brand} element={<BrandPage/>} />
+            <Route path={'/' + state.brand} element={<BrandPage/>} />
             <Route path={'/' + state.series} element={<BrandSeriesPage/>} />
             <Route path="/addCars" element={<AddCars/>} />
             <Route path="/addVideos" element={<AddVideos/>} />

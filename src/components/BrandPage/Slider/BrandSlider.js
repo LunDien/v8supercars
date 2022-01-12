@@ -22,16 +22,6 @@ function BrandSlider() {
                     playbackRate={1.2}
                     height="calc(100vh - calc(var(--header-height) + var(--headerSub-height)))"
                     loop={true}
-                    config={{
-                        youtube: {
-                            playerVars: {
-                                showinfo: 0,
-                                origin: "https://lundien.github.io/v8supercars/"
-                    
-                            }
-
-                        }
-                    }}
                     />  
                     <div className={styled.caption}>
                     <div className={styled.captionHeader}>COMING SOON</div>
