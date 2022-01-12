@@ -32,9 +32,9 @@ function App() {
         <GlobalStyle>
         <HeaderNavbar brand={brand}/>
         <Routes>
-            <Route path="/v8supercars" element={<Homepage/>} />
+            <Route path="/v8supercars/" element={<Homepage/>} />
             <Route path="/" element={<Homepage/>} />
-            <Route path={'/' + state.brand} element={<BrandPage/>} />
+            <Route path={'/' + brand} element={<BrandPage/>} />
             <Route path={'/' + state.series} element={<BrandSeriesPage/>} />
             <Route path="/addCars" element={<AddCars/>} />
             <Route path="/addVideos" element={<AddVideos/>} />
